@@ -22,3 +22,9 @@
 
 ## git advanced usage
 
+
+## github or gitlab issues
+- 在服务器添加完公钥后报错 sign_and_send_pubkey: signing failed: agent refused operation
+    - eval "$(ssh-agent -s)"
+    - ssh-add
+
