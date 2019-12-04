@@ -7,6 +7,9 @@
 - git remote add origin git_address
     - 为远端仓库所起的名字，一般都是叫origin，其实你也可以要Ceres 或者Earth
     - 不限于一个仓库，可以加多个仓库，然后push到多个仓库
+- 更改remote origin
+    - git remote rm origin
+    - git remote add origin new-ulr
 
 
 ### commit
