@@ -10,6 +10,10 @@
 - 更改remote origin
     - git remote rm origin
     - git remote add origin new-ulr
+- git submodule
+    - git submodule update --init --recursive  子模块的使用 克隆项目后，默认子模块目录下无任何内容。需要在项目根目录执行如下命令完成子模块的下载
+    - How do I add a submodule to a sub-directory?
+        - http://www.itkeyword.com/doc/0367233012900956x413/how-do-i-add-a-submodule-to-a-sub-directory
 
 
 ### commit
