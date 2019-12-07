@@ -36,12 +36,6 @@
                     - https://packages.ubuntu.com/bionic/amd64/libgnutls30/download
                     - https://packages.ubuntu.com/disco/amd64/libgnutls30/download
                 - 最终确定下载1.6.1版本可行
-
-
-
-
-
-
 ## questions:
 - sudo: apt: command not found
     [apt-download](http://security.ubuntu.com/ubuntu/pool/main/a/apt/) 下载最新的apt_1.9.5_amd64.deb
