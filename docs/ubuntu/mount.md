@@ -9,8 +9,12 @@ sudo mount /dev/sdb1 /media/home
         - sudo lsof mounted_path
         - sudo kill -9 pids
     - [lost-mount-after-reboot]
-        - sudo fdisk -ll
+        - sudo fdisk -ll/ df _T
         - 编辑 /etc/fstab后加入如下面的内容后重启
-        - /dev/sdb1 /mnt/lsxu/work ntfs-3g umask=000,iocharset=utf8 0 0
+        - /dev/sdb1 /mnt/lsxu/work ntfs-3g umask=000,iocharset=utf8 0 0 //(ntfs格式的磁盘)
+        - /dev/sda1 /mnt/lsxu/work ext4 defaults 0 0 // (ext4格式的磁盘)
+    - 注意sudo passwd root修改root密码
+    - 或通过启动盘进入ubuntu，去修改/etc/fstab文件
+    
 
 

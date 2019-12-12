@@ -12,7 +12,8 @@
     - 3.执行 git submodule sync
 
 - module path的更新
-- 先删除, 然后再添加
+    - 先删除, 然后再添加
+    
 ```
 git submodule deinit <submodule name>
 git rm <submodule folder name>
