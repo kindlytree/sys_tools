@@ -1,0 +1,42 @@
+#docker-compose
+
+## install
+
+```
+version: '2.3'
+services:
+  airflow:
+    build: ../../airflow/docker
+    container_name: airflow
+    # expose:
+    #  - "8080"
+    #  - "5555"
+    #  - "8793"
+    ports:
+      - "8080:8080"
+      - "5555:5555"
+      - "8793:8793"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker
+    command: "tail -f /dev/null"
+
+  eval:
+    build: ../../evaluation/docker/nvcaffe
+    container_name: eval
+    runtime: nvidia
+    privileged: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker
+    shm_size: '2gb'
+    environment:
+      - LANG=C.UTF-8
+    working_dir: '/home/user/test'
+    command: "tail -f /dev/null"
+```
+
+## use
+- docker-compose build
+- docker-compose stop
+- docker-compose up -d
