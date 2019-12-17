@@ -32,6 +32,7 @@ services:
     shm_size: '2gb'
     environment:
       - LANG=C.UTF-8
+      - LD_LIBRARY_PATH=/home/kindlytree/lib:$LD_LIBRARY_PATH
     working_dir: '/home/user/test'
     command: "tail -f /dev/null"
 ```
