@@ -15,6 +15,38 @@
     - How do I add a submodule to a sub-directory?
         - http://www.itkeyword.com/doc/0367233012900956x413/how-do-i-add-a-submodule-to-a-sub-directory
 
+- 删除远程分支
+    $ git push origin --delete remote_branch_name
+- 删除本地分支
+    $ git branch -d branch_name
+- rebase 变基
+    切换到当前修改的分支上
+    $ git checkout modify_branch
+    $ git rebase master(需要merge的分支)
+    $ git chechout master
+    $ git merge modify_branch (完成merge)
+
+- 查看历史提交
+    $ git log
+    $ git log -n (n为最近提交的次数，即查看最近提交的记录)
+    $ git log -p (查看提交的内容差异)
+
+- 回滚之前的commit
+    查看之前commit的id
+    $ git log 
+    回滚到之前的版本
+    $ git reset --hard xxxxx(id)
+- 撤销commit
+    1> 提交信息写错：
+    $ git commit -m"initial commit"
+    $ git commit --amend(立即执行，重新新commit info)
+    2> 漏添加文件
+    $ git commit -m"initial commit"
+    $ git add forgotten_file
+    $ git commit --amend(终你只会有一个提交——第二次提交将代替第一次提交的结果)
+- 取消暂存文件
+    7.1 
+    https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C
 
 ### commit
 - git commit -m 'commit information'
@@ -25,8 +57,6 @@
 - swith branch:  git checkout origin/master
 - git checkout -b pipeline origin/pipeline  -b选项如果没有则创建
 
-
-
 ## git advanced usage
 
 
@@ -35,3 +65,4 @@
     - eval "$(ssh-agent -s)"
     - ssh-add
 
+ 
