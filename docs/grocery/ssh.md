@@ -23,3 +23,5 @@
 
 ## remove 
 - ssh-keygen -f "/home/lsxu/.ssh/known_hosts" -R "10.10.8.107"
+
+- [samples](https://github.com/ruanyf/simple-bash-scripts.git)
