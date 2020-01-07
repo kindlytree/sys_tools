@@ -1,4 +1,4 @@
-# linux-command-line
+# most popular non GUI tools or system commands
 
 ## information about system | applications
 - 查看ubuntu版本 sudo lsb_release -a

@@ -65,4 +65,9 @@
     - eval "$(ssh-agent -s)"
     - ssh-add
 
+## git 拉取所有分之代码到本地
+- git fetch --all
+
+
+
  
