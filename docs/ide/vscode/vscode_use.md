@@ -4,7 +4,7 @@
 - vscode-icons
 - Python extension for Visual Studio Code
 
-## 快捷键
-- markdown preview
+## 快捷键(F1键)
+- markdown preview 
 
 
