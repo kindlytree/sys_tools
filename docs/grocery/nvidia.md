@@ -7,7 +7,7 @@
 - 不推荐 https://www.nvidia.com/Download/index.aspx?lang=en-us 查询硬件最新驱动 直接在官网下载 *.run文件
     - chomd +x *.run
     - sudo ./*.run 
-- 安装NVIDIA驱动
+- 安装NVIDIA驱动（推荐使用）
     - 添加源
         - sudo add-apt-repository ppa:graphics-drivers/ppa
         - sudo apt update
