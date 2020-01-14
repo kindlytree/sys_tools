@@ -1,5 +1,6 @@
 # docker
 - [doc](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+- [bash](../../bash/docker_install.sh)
 - steps:
 ```
 sudo apt-get update

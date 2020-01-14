@@ -71,3 +71,7 @@ Access via rsync daemon:
 [root@xuexi ~]# rsync -a /etc /tmp
 [root@xuexi ~]# rsync -a /etc/ /tmp
 第一个命令会在/tmp目录下创建etc目录，而第二个命令不会在/tmp目录下创建etc目录，源路径/etc/中的所有文件都直接放在/tmp目录下。
+
+
+# samples
+- rsync -P --rsh='ssh -p 12201' -r ./*** user@hostip:path
