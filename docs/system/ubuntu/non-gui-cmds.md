@@ -52,3 +52,10 @@
     - 4. ldconfig做的这些东西都与运行程序时有关，跟编译时一点关系都没有。编译的时候还是该加-L就得加，不要混淆了。 
     - 5. 总之，就是不管做了什么关于library的变动后，最好都ldconfig一下，不然会出现一些意想不到的结果。不会花太多的时间，但是会省很多的事。
 
+## cat
+- [reference1](https://www.cnblogs.com/apolloren/p/9847999.html)
+- [echo或cat到文件](https://www.qttc.net/475_linux_echo_cat_to_file.html) 
+- 一次显示整个文件 cat filename
+- 从键盘穿件一个文件 cat > filename
+- 将几个文件合并为一个文件 cat file1 file2 > file
+- 
