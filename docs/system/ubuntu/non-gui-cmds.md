@@ -1,7 +1,8 @@
-# most popular non GUI tools or system commands
+# Most popular non-GUI tools or system commands
 
 ## information about system | applications
 - 查看ubuntu版本 sudo lsb_release -a
+- 查看内核版本 uname -a
 - free -m 查看内存使用情况
 - 查看驱动版本：cat /proc/driver/nvidia/version
 - ps

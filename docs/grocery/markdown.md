@@ -4,3 +4,4 @@
 - format
     - [基本语法](https://www.jianshu.com/p/191d1e21f7ed)
     - [formula](https://www.jianshu.com/p/e74eb43960a1) 
+    - [有道笔记语法](http://note.youdao.com/iyoudao/?p=1895)

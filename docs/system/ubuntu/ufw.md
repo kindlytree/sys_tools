@@ -1,4 +1,5 @@
-# safety
+# ufw
+- [ufw.sh](../../bash/ufw.sh)
 
 ## ufw firewall
 - [reference](https://blog.csdn.net/txl910514/article/details/80787982)

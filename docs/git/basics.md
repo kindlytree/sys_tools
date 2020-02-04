@@ -9,7 +9,7 @@
     - 不限于一个仓库，可以加多个仓库，然后push到多个仓库
 - 更改remote origin
     - git remote rm origin
-    - git remote add origin new-ulr
+    - git remote add origin new-url
 - git submodule
     - git submodule update --init --recursive  子模块的使用 克隆项目后，默认子模块目录下无任何内容。需要在项目根目录执行如下命令完成子模块的下载
     - How do I add a submodule to a sub-directory?
