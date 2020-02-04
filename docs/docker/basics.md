@@ -10,7 +10,7 @@
 - docker rmi imageid (remove the docker image by id)
 - docker commit  0c4d0d394e7e group/name:new_tag (commit the container to new images)
 - docker commit f93e8629f811 ocr/tf1.8-pytorch0.4:1.0
-- docker commit -m="caffe image" -a="lsxu" 5605f61c0ac4 lsxu/caffe:v1
+- docker commit -m="caffe image" -a="lsxu" 5605f61c0ac4 kindlytree/caffe:v1
 
 ## start docker
 - examples:
@@ -58,7 +58,7 @@ nvidia-docker run -idt \
 
 
 
-docker save -o nm_mmdet_1.1.tar nullmax/mmdet:1.1
+docker save -o mmdet_1.1.tar kindlytree/mmdet:1.1
 ```
 
 

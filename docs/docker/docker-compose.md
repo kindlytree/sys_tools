@@ -22,7 +22,7 @@ services:
       - GDK_DPI_SCALE
     volumes:
       - ../:/mmdet
-      - /mnt/lsxu/data0:/data
+      - /mnt/kindlytree/data0:/data
       - /tmp/.X11-unix:/tmp/.X11-unix      
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -32,7 +32,7 @@ services:
   eval:
     build: ../../evaluation/docker/nvcaffe
     container_name: eval
-    image: nullmax/mmdet:1.1
+    image: kindlytree/mmdet:1.1
     runtime: nvidia
     privileged: true
     volumes:
