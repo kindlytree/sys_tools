@@ -20,11 +20,10 @@
 - 删除本地分支
     $ git branch -d branch_name
 - rebase 变基
-    切换到当前修改的分支上
-    $ git checkout modify_branch
-    $ git rebase master(需要merge的分支)
-    $ git chechout master
-    $ git merge modify_branch (完成merge)
+    - 切换到当前修改的分支上: git checkout modify_branch
+    - git rebase master(需要merge的分支)
+    - git chechout master
+    - git merge modify_branch (完成merge)
 
 - 查看历史提交
     $ git log

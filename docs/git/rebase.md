@@ -6,6 +6,7 @@ rebase 操作和 merge 操作最终都可以达到合并代码的效果，不过
 
 ## sample
 - ![示意图](../figures/git/rebase.gif)  
+
 ```
 git checkout  side
 git rebase master
