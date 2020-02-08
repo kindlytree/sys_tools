@@ -24,6 +24,7 @@ System(ubuntu) and tools to speed up and facilitate the development.
 
 ### git
 - [basic usage](./docs/git/basics.md)
+- [git rebase](./docs/git/rebase.md)
 - [branch management](./docs/git/branch.md)
 
 ### docker
