@@ -31,6 +31,7 @@ System(ubuntu) and tools to speed up and facilitate the development.
 - [docker installation](./docs/docker/install.md)
 - [basic usage](./docs/docker/basics.md)
 - [docker-compose example](./docs/docker/docker-compose.md)
+- [docker faq](./docs/docker/faq.md)
 
 ### dvc
 - [dvc installation](./docs/dvc/install.md)
