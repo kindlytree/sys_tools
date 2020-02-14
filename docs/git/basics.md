@@ -67,6 +67,12 @@
 ## git 拉取所有分之代码到本地
 - git fetch --all/-a
 
-
-
+## git config 添加配置项目 
+- 1、仓库级别 local 【优先级最高】
+- 2、用户级别 global【优先级次之】
+- 3、系统级别 system【优先级最低】
+```
+git config --global user.email “you@example.com”
+git config --global user.name “Your Name”
+```
  
