@@ -1,5 +1,5 @@
 # System and Tools
-System(ubuntu) and tools to speed up and facilitate the development.
+System(ubuntu) and tools to facilitate the development.
 
 ## System
 
