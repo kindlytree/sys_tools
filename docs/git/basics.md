@@ -76,3 +76,15 @@ git config --global user.email “you@example.com”
 git config --global user.name “Your Name”
 ```
  
+## 代码规范
+
+- commit，分title和description，description空一行开始，每个commit不宜过大
+- 确保给予最新的master git rebase master
+- code reivew（自己，管理者）
+
+## 工作流程
+- 同步master分支，git checkout master  git pull
+- 基于master 分支创建新的分支 git checkout -b my_branch
+- git push origin my_branch
+- code review, update
+- 把master最新的代码rebase过来  git  checkout master git pull, git checkout my_branch, git rebase master
