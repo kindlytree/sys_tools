@@ -1,5 +1,6 @@
 # tmux
 - [不错的教程](http://www.ruanyifeng.com/blog/2019/10/tmux.html)
+- [tmux基本用法](http://koyo922.github.io/2016/02/21/tmux/)
 ## 基本使用
 - tmux new -s sesson-name 开启一个新的session
 - tmux ls 列举已有的session
@@ -34,3 +35,10 @@
 - Ctrl+b Ctrl+o：当前窗格上移。
 - Ctrl+b Alt+o：当前窗格下移。
 - Ctrl+b x：关闭当前窗格。
+
+## 不同屏幕连接后大的屏幕再连出现不能显示的区域
+如果两个电脑连接同一个tmux，但是他们各自的显示器大小不同，那么就会在一个显示器部分会显示灰色区。在tmux里面有个设置可以更改，在tmux里面输入命令
+···
+tmux set-window-option aggressive-resize on
+···
+再重新连接进去就可以
