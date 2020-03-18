@@ -10,6 +10,7 @@
     - ps -ef | grep firefox   pgrep firefox
     - ps -ef | grep firefox | awk '{print $2}' | xargs kill -9
         - 其中awk '{print $2}' 的作用就是打印（print）出第二列的内容。根据常规篇，可以知道ps输出的第二列正好是PID。就把进程相应的PID通过xargs传递给kill作
+    - https://www.cnblogs.com/shanheyongmu/p/6001098.html
 参数，杀掉对应的进程。
 
 ## file system
