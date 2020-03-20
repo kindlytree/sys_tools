@@ -10,6 +10,7 @@
     - ps -ef | grep firefox   pgrep firefox
     - ps -ef | grep firefox | awk '{print $2}' | xargs kill -9
         - 其中awk '{print $2}' 的作用就是打印（print）出第二列的内容。根据常规篇，可以知道ps输出的第二列正好是PID。就把进程相应的PID通过xargs传递给kill作
+    - https://www.cnblogs.com/shanheyongmu/p/6001098.html
 参数，杀掉对应的进程。
 
 ## file system
@@ -24,6 +25,7 @@
     - which nano
     - find -L . -type l  查找当前目录下失效的软链接
 - scp file usr@ip:/home/user/path 拷贝本地文件到远程文件
+- ls -lR|grep "^-"| wc -l 查看当前文件夹(及其子文件夹的文件的个数)
 - 磁盘信息
     - df -hl 查看磁盘空间
     - du -sh 查看当前文件夹大小
@@ -54,7 +56,7 @@
     - 5. 总之，就是不管做了什么关于library的变动后，最好都ldconfig一下，不然会出现一些意想不到的结果。不会花太多的时间，但是会省很多的事。
 
 ## cat
-- [reference1](https://www.cnblogs.com/apolloren/p/9847999.html)
+- [reference1](https://www.cnblogs.com/apolloren/p/jia7999.html)
 - [echo或cat到文件](https://www.qttc.net/475_linux_echo_cat_to_file.html) 
 - 一次显示整个文件 cat filename
 - 从键盘穿件一个文件 cat > filename
