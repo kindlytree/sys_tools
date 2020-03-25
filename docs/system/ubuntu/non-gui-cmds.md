@@ -15,17 +15,22 @@
 
 ## file system
 - 压缩解压缩命令
-    - tar cjf - logs/ |split -b 1m - logs.tar.bz2. 将logs文件分包压缩成1m大小的切片文件
-    - tar cjf - install/ |split -b 260m - tuzhenalg2.0.2.tar.bz2.
-    - tar -zcvf sdk.tar.gz ./sdk
-    - tar -zcvf tuzhensdk2.1.x.tar.gz ./install
+  - tar cjf - logs/ |split -b 1m - logs.tar.bz2. 将logs文件分包压缩成1m大小的切片文件
+  - tar cjf - install/ |split -b 260m - tuzhenalg2.0.2.tar.bz2.
+  - tar -zcvf sdk.tar.gz ./sdk
+  - tar -zcvf tuzhensdk2.1.x.tar.gz ./install
 - 文件查找
-    - sudo find / -name libjson_linux-gcc-4.6_libmt.so 查找so文件所在的路径
-    - whereis nano
-    - which nano
-    - find -L . -type l  查找当前目录下失效的软链接
-- scp file usr@ip:/home/user/path 拷贝本地文件到远程文件
-- ls -lR|grep "^-"| wc -l 查看当前文件夹(及其子文件夹的文件的个数)
+  - sudo find / -name libjson_linux-gcc-4.6_libmt.so 查找so文件所在的路径
+  - whereis nano 与which不同的是这条命令可以是通过文件索引数据库而非PATH来查找的，所以查找的面比which要广
+  - which nano  查找系统***PATH目录下***的可执行文件
+  - find -L . -type l  查找当前目录下失效的软链接
+- scp文件传输
+  - scp file usr@ip:/home/user/path 拷贝本地文件到远程文件
+  - scp -P 1022 -r /path/to/local/dir user@ip:/path/to/dir 拷贝本地目录到远程文件
+- 统计文件个数
+  - 统计某文件夹下文件的个数  ls -l |grep "^-"|wc -l
+  - 统计某文件夹下目录的个数 ls -l |grep "^ｄ"|wc -l
+  - 统计文件夹下文件的个数，包括子文件夹里的 ls -lR|grep "^-"|wc -l
 - 磁盘信息
     - df -hl 查看磁盘空间
     - du -sh 查看当前文件夹大小
