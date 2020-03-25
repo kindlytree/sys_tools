@@ -88,3 +88,16 @@ git config --global user.name “Your Name”
 - git push origin my_branch
 - code review, update
 - 把master最新的代码rebase过来  git  checkout master git pull, git checkout my_branch, git rebase master
+
+## submodule
+- 当有新的submodule的时候clone submodule的方法 
+    - git submodule update --recursive
+- .gitmodules文件
+```
+[submodule "module_name"]
+	path = module_name
+	url = remote_url
+[submodule "multi_path"]
+	path = path1/child/child_child
+	url = remote_url1    
+```
