@@ -46,3 +46,6 @@ tmux set-window-option aggressive-resize on
 有时候我们的终端会小屏显示，因为其他终端在使用小屏尺寸。如何在当前终端下，断开其他终端的 tmux 连接？方法是：ctrl+b, D
 
 使用这个命令，会列出所有连接的终端，选择一个来断开。注意，命令中是大写的 D。
+
+## scroll in tmux
+Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn). Press q to quit scroll mode.
