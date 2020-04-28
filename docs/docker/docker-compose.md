@@ -51,3 +51,4 @@ services:
 - docker-compose stop
 - docker-compose up -d
 - docker-compose -f ***.yml build
+- docker-compose build --no-cahce eval

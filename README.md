@@ -1,5 +1,5 @@
 # System and Tools
-System(ubuntu) and tools to facilitate the development.
+System(ubuntu) and tools to facilitate the development. Taking notes about the topics from software engineering practices.
 
 ## System
 
