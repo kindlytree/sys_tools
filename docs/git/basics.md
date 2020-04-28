@@ -37,10 +37,10 @@
     $ git reset --hard xxxxx(id)
 - 撤销commit
     1> 提交信息写错：
-    $ git commit -m"initial commit"
+    $ git commit -m "initial commit"
     $ git commit --amend(立即执行，重新新commit info)
     2> 漏添加文件
-    $ git commit -m"initial commit"
+    $ git commit -m "initial commit"
     $ git add forgotten_file
     $ git commit --amend(终你只会有一个提交——第二次提交将代替第一次提交的结果)
 - 取消暂存文件
@@ -79,7 +79,7 @@ git config --global user.name “Your Name”
 ## 代码规范
 
 - commit，分title和description，description空一行开始，每个commit不宜过大
-- 确保给予最新的master git rebase master
+- 确保基于最新的master git rebase master
 - code reivew（自己，管理者）
 
 ## 工作流程
