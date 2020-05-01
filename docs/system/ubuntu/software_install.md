@@ -1,8 +1,10 @@
 # software install
 
 ## [google chrome](https://www.google.cn/chrome/)
-
-
+- GFW
+    - https://github.com/FelisCatus/SwitchyOmega/releases
+    - 页面滚动到下方，找到SwitchyOmega_Chromium.crx，点击链接下载crx文件
+    - https://www.9s.nz/user
 
 
 ## sougou install
