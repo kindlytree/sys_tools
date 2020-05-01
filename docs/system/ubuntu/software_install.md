@@ -1,6 +1,8 @@
 # software install
 
-## [google chrome](http://www.ubuntuchrome.com/)
+## [google chrome](https://www.google.cn/chrome/)
+
+
 
 
 ## sougou install
