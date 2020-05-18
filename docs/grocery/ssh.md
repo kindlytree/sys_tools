@@ -25,3 +25,13 @@
 - ssh-keygen -f "/home/lsxu/.ssh/known_hosts" -R "10.10.8.107"
 
 - [samples](https://github.com/ruanyf/simple-bash-scripts.git)
+
+## Permission denied (publickey).
+- https://www.digitalocean.com/community/questions/error-permission-denied-publickey-when-i-try-to-ssh
+- vi /etc/ssh/sshd_config or nano /etc/ssh/sshd_config
+```
+# Change to no to disable tunnelled clear text passwords
+PasswordAuthentication yes
+
+sudo service sshd reload
+```
