@@ -33,3 +33,8 @@ sudo pkill -SIGHUP dockerd
 - 2.add current user to docker group：sudo gpasswd -a ${USER} docker
 - 3.restart the service：sudo service docker restart
 - 4.refresh docker member：newgrp - docker
+
+## no space left on device
+```
+docker system prune -a
+```

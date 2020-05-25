@@ -23,6 +23,11 @@
 - docker save -o tf1.8-pytorch0.4.tar ocr/tf1.8-pytorch0.4:1.0
 - docker tag 81770697ae08 ocr/pipeline-service-tf1.8-pytorch0.4:1.0
 
+## docker search
+```
+docker search ubuntu:16.04
+```
+
 
 ```
 nvidia-docker run -idt \
@@ -61,6 +66,10 @@ nvidia-docker run -idt \
 docker save -o mmdet_1.1.tar kindlytree/mmdet:1.1
 ```
 
+## base
+
+```
+```
 
 ## reference
 - [参考1](http://www.docker.org.cn/book/docker/prepare-docker-5.html)
