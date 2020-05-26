@@ -26,6 +26,9 @@
 ## docker search
 ```
 docker search ubuntu:16.04
+
+FROM ubuntu:16.04
+
 ```
 
 
@@ -62,6 +65,20 @@ nvidia-docker run -idt \
     sleep infinity
 
 
+nvidia-docker run -idt \
+    --shm-size="1g" \
+    --ulimit core=-1 \
+    --security-opt seccomp=unconfined \
+    ubuntu:16.0 \
+    sleep infinity
+
+
+nvidia-docker run -idt \
+    --shm-size="1g" \
+    --ulimit core=-1 \
+    --security-opt seccomp=unconfined \
+    gcr.io/titanium-atlas-219621/bottle_tracking_train:latest \
+    sleep infinity
 
 docker save -o mmdet_1.1.tar kindlytree/mmdet:1.1
 ```
