@@ -87,3 +87,9 @@ Then, restart Docker or reboot the system:
 
 sudo systemctl restart docker
 ```
+
+## unauthorized: authentication required
+```
+sudo docker login clobotics.azurecr.io 
+```
+
