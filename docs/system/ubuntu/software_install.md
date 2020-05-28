@@ -21,3 +21,9 @@ Setting -> Region & Language -> Manage Installed Languages
 
 在系统程序中搜索打开fcitx configuration，右下角点击添加按钮，把 Only Show Current Language取消勾选，然后选择Sougou Pinyin，然后添加进去。
 ```
+
+## dtalk
+https://www.cnblogs.com/yuzhen0228/p/12016246.html
+
+## switchomega
+https://github.com/FelisCatus/SwitchyOmega/releases
