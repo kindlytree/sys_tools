@@ -72,6 +72,37 @@ nvidia-docker run -idt \
     ubuntu:16.0 \
     sleep infinity
 
+
+nvidia-docker run -idt \
+    --shm-size="1g" \
+    --ulimit core=-1 \
+    --security-opt seccomp=unconfined \
+    gcr.io/titanium-atlas-git/bottle_tracking_train:latest \
+    sleep infinity
+
+
+sudo nvidia-docker run -idt \
+    --shm-size="1g" \
+    --ulimit core=-1 \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    --security-opt seccomp=unconfined \
+    gcr.io/titanium-atlas-219621/mirrow_clf_etl:latest sleep infinity
+
+
+
+sudo docker run -idt \
+    --shm-size="1g" \
+    --ulimit core=-1 \
+    --security-opt seccomp=unconfined \
+    gcr.io/titanium-atlas-219621/maskrcnn_etl:latest sleep infinity
+
+
+sudo nvidia-docker run -idt \
+    --shm-size="1g" \
+    --ulimit core=-1 \
+    --security-opt seccomp=unconfined \
+    gcr.io/titanium-atlas-219621/maskrcnn_train:latest sleep infinity
+
 docker save -o mmdet_1.1.tar kindlytree/mmdet:1.1
 ```
 
