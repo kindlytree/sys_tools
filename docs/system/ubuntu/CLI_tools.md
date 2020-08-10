@@ -50,6 +50,9 @@
     - 1.一次显示整个文件:cat filename
     - 2.从键盘创建一个文件:cat > filename 只能创建新文件,不能编辑已有文件.
     - 3.将几个文件合并为一个文件:cat file1 file2 > file 一个文本文件，其中包含的有另一文件的位置信息。
+- 显示log
+    - tail -n 50 wx.log
+    - head -n 100 wx.log
 
 ## dynamic link 
 - ldd是list, dynamic, dependencies的缩写， 意思是， 列出动态库依赖关系,如：ldd libcaffe.so | grep proto 列车当前文件库下的动态文件;

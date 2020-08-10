@@ -10,3 +10,8 @@
 ## 查看磁盘
 - fdisk -l(查看所有磁盘)
 - df -h(查看已经挂载磁盘)
+
+## 用户管理
+查看用户列表： cat /etc/passwd
+删除用户: userdel -f lsxu
+添加用户: sudo adduser lsxu

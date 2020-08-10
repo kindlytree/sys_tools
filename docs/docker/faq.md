@@ -93,3 +93,5 @@ sudo systemctl restart docker
 sudo docker login clobotics.azurecr.io 
 ```
 
+## multi-stage build(多阶段构建)
+https://docs.docker.com/develop/develop-images/multistage-build/

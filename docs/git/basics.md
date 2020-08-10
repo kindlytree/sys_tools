@@ -91,7 +91,7 @@ git config --global user.name “Your Name”
 
 ## submodule
 - 当有新的submodule的时候clone submodule的方法 
-    - git submodule update --recursive
+    - git submodule update init --recursive
 - .gitmodules文件
 ```
 [submodule "module_name"]

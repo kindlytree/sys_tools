@@ -104,6 +104,50 @@ sudo nvidia-docker run -idt \
     gcr.io/titanium-atlas-219621/maskrcnn_train:latest sleep infinity
 
 docker save -o mmdet_1.1.tar kindlytree/mmdet:1.1
+
+sudo docker run -idt \
+    -v /datadrive/dev/magicube:/magicube \
+    -p 80:8000 \
+    --shm-size="1g" \
+    --ulimit core=-1 \
+    --security-opt seccomp=unconfined \
+    clobotics/magicube:latest sleep infinity
+
+
+    sudo docker run -idt \
+    --shm-size="1g" \
+    --ulimit core=-1 \
+    --security-opt seccomp=unconfined \
+    gcr.io/titanium-atlas-219621/bottle_tracking_eval:latest sleep infinity
+
+
+    sudo nvidia-docker run -idt \
+    --shm-size="1g" \
+    --ulimit core=-1 \
+    -v /datadrive/maskrcnn_debug:/datadrive/results \
+    --security-opt seccomp=unconfined \
+    gcr.io/titanium-atlas-219621/maskrcnn_eval:latest sleep infinity
+
+
+    sudo docker run -idt \
+    --shm-size="1g" \
+    --ulimit core=-1 \
+    --security-opt seccomp=unconfined \
+    gcr.io/titanium-atlas-219621/mirrow_clf_eval:latest sleep infinity
+
+
+    sudo docker run -idt \
+    -v /datadrive:/datadrive \
+    --shm-size="1g" \
+    --ulimit core=-1 \
+    --security-opt seccomp=unconfined \
+    gcr.io/titanium-atlas-219621/maskrcnn_etl:latest sleep infinity 
+
+    sudo docker run -idt \
+    --shm-size="1g" \
+    --ulimit core=-1 \
+    --security-opt seccomp=unconfined \
+    gcr.io/titanium-atlas-219621/etl:r4 sleep infinity     
 ```
 
 ## base
