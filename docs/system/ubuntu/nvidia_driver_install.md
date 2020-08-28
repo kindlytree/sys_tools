@@ -9,6 +9,8 @@
     - sudo ./*.run 
 - 安装NVIDIA驱动（推荐使用）
     - 添加源
+        - sudo apt-get install software-properties-common
+        - sudo apt-get install ubuntu-drivers-common
         - sudo add-apt-repository ppa:graphics-drivers/ppa
         - sudo apt update
         - sudo apt upgrade

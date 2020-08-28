@@ -95,3 +95,20 @@ sudo docker login clobotics.azurecr.io
 
 ## multi-stage build(多阶段构建)
 https://docs.docker.com/develop/develop-images/multistage-build/
+
+## how to activate conda env in docker
+- https://medium.com/@chadlagore/conda-environments-with-docker-82cdc9d25754
+
+```
+RUN conda create --name Unit python=2.7
+RUN /bin/bash -c  "source activate Unit"
+# RUN conda activate Unit
+# RUN source activate Unit
+
+# RUN echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc
+# RUN echo "conda activate Unit" >> ~/.bashrc
+
+
+RUN echo "source activate Unit" > ~/.bashrc
+ENV PATH /opt/conda/envs/Unit/bin:$PATH
+```
