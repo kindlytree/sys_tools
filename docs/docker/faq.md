@@ -111,4 +111,6 @@ RUN /bin/bash -c  "source activate Unit"
 
 RUN echo "source activate Unit" > ~/.bashrc
 ENV PATH /opt/conda/envs/Unit/bin:$PATH
+
+RUN conda install -n Unit pytorch torchvision cudatoolkit=10.2 -c pytorch
 ```
