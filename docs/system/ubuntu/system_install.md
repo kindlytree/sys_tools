@@ -14,3 +14,7 @@ sudo vim /etc/apt/sources.list or mv /path/to/source.list /etc/apt/
 sudo apt update
 sudo apt upgrade
 ```
+
+# excute sudo without using passwd
+- sudo nano /etc/sudoers.d/lsxu
+- lsxu ALL=(ALL) NOPASSWD:ALL

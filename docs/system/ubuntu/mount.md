@@ -6,6 +6,19 @@
 
 ## 格式
 
+```
+sudo fdisk -l
+
+lsblk
+
+sudo blkid
+
+mkfs -t ext4 -c /dev/sdb
+
+
+```
+
+
 ### 设备挂载
 
 格式为

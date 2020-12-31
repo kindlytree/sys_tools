@@ -14,6 +14,7 @@
     - sudo apt --fix-broken install
     - sudo apt install fcitx
     - sudo apt install libqtwebkit4
+    
 ```
 Setting -> Region & Language -> Manage Installed Languages
 
@@ -27,3 +28,6 @@ https://www.cnblogs.com/yuzhen0228/p/12016246.html
 
 ## switchomega
 https://github.com/FelisCatus/SwitchyOmega/releases
+
+## WPS
+https://www.wps.cn/product/wpslinux
