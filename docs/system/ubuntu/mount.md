@@ -13,7 +13,7 @@ lsblk
 
 sudo blkid
 
-mkfs -t ext4 -c /dev/sdb
+sudo mkfs -t ext4 /dev/sdb
 
 
 ```

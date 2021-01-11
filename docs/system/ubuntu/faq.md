@@ -10,3 +10,10 @@
 ```
 sudo  usermod -aG sudo username
 ```
+
+## 中文乱码问题
+```
+https://blog.csdn.net/weixin_39792252/article/details/80415550
+
+echo "export LC_ALL=en_US.UTF-8" >> /etc/profile
+```
