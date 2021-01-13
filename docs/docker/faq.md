@@ -114,3 +114,11 @@ ENV PATH /opt/conda/envs/Unit/bin:$PATH
 
 RUN conda install -n Unit pytorch torchvision cudatoolkit=10.2 -c pytorch
 ```
+
+## update source
+
+```
+RUN mv /etc/apt/sources.list /etc/apt/sources.list.bk
+ADD sources.list /etc/apt/
+
+```

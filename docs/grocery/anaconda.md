@@ -1,10 +1,17 @@
 # Anaconda
-- [install]([Anaconda](https://www.anaconda.com/distribution/#linux))
+- **[install]([Anaconda](https://www.anaconda.com/distribution/#linux))**
 - [Ubuntu 18.04 LTS操作系统的Conda安装及配置](https://blog.csdn.net/fhxy_xzw/article/details/98595878)
 
 ## installation
 - [conda: command not found](https://blog.csdn.net/weixin_38705903/article/details/86533863)
-- 
+
+```
+vim ~/.bashrc
+export PATH=$PATH:/home/lsxu/anaconda3/bin
+source ~/.bashrc
+```
+
+
 ## conda常用命令
 1、conda -V检验是否安装以及当前conda的版本。
 2、conda list 查看安装了哪些包。
