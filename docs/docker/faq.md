@@ -39,39 +39,6 @@ sudo pkill -SIGHUP dockerd
 docker system prune -a
 ```
 
-
-
-```
-sudo apt remove docker-*
-
-
-https://github.com/NVIDIA/nvidia-container-runtime#docker-engine-setup
-
-  342  sudo mkdir -p /etc/systemd/system/docker.service.d
-  343  sudo tee /etc/systemd/system/docker.service.d/override.conf <<EOF
-[Service]
-ExecStart=
-ExecStart=/usr/bin/dockerd --host=fd:// --add-runtime=nvidia=/usr/bin/nvidia-container-runtime
-EOF
-  344  sudo systemctl daemon-reload
-  345  sudo systemctl restart docker
-  346  sudo tee /etc/docker/daemon.json <<EOF
-{
-    "runtimes": {
-        "nvidia": {
-            "path": "/usr/bin/nvidia-container-runtime",
-            "runtimeArgs": []
-        }
-    }
-}
-EOF
-  347  sudo pkill -SIGHUP dockerd
-  348  sudo systemctl restart docker
-  349  systemctl status docker.service
-  350  sudo apt-get install nvidia-container-runtime
-  351  systemctl status docker.service
-```
-
 ## how to change docker storage location
 - https://evodify.com/change-docker-storage-location/
 
@@ -122,3 +89,13 @@ RUN mv /etc/apt/sources.list /etc/apt/sources.list.bk
 ADD sources.list /etc/apt/
 
 ```
+
+## W: GPG error: https://developer.download.nvidia.cn/compute/cuda/repos/ubuntu1804/x86_64  Release: The following signatures were invalid: BADSIG F60F4B3D7FA2AF80 cudatools <cudatools@nvidia.com>
+E: The repository 'https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64  Release' is not signed.
+
+- https://github.com/NVIDIA/nvidia-docker/issues/613#issuecomment-710743190
+
+多试几次，见mmdetection的repo里边的docker目录，在/etc/hosts里面加上相关内容试试看
+
+## docker-compose 中的option中不支持runtime选项
+- 参考docker_install.sh中的脚本，下载最新版本的docker-compose

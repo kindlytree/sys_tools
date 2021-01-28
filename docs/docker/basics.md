@@ -148,6 +148,13 @@ sudo docker run -idt \
     --ulimit core=-1 \
     --security-opt seccomp=unconfined \
     gcr.io/titanium-atlas-219621/etl:r4 sleep infinity     
+
+
+    sudo docker run -idt \
+    --shm-size="1g" \
+    --ulimit core=-1 \
+    --security-opt seccomp=unconfined \
+    mmdet:latest sleep infinity     
 ```
 
 ## base
