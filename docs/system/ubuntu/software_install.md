@@ -28,6 +28,7 @@ https://www.cnblogs.com/yuzhen0228/p/12016246.html
 
 ## switchomega
 https://github.com/FelisCatus/SwitchyOmega/releases
+https://my.oschina.net/u/4314328/blog/3338803
 
 ## WPS
 https://www.wps.cn/product/wpslinux
